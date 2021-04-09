@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# 기술 스택
+- React, React hooks, styled-component, react-vis, axios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# UI/UX 라이브러리
+- antd
 
-## Available Scripts
+# 공통 조건
+- [x] 금액의 단위는 원화 (₩)이며, 1,000 단위 콤마를 찍는다.
+- [x] 백분율 값은 소수점 2자리까지 표시하며, %를 붙여준다.
+- [ ] 증가한 값은 파란색으로 표시하고, 감소한 값은 빨간색으로 표시한다.
+- [x] 상단에 프로젝트명과 데이터 업데이트 날짜 및 시간을 표시한다. <br />
+    한 시간마다 api주소를 새롭게 불러올 수 있도록 구현 하였습니다. <br />
+    예산 소진 현황에 처음 facebook이 나왔다면 한 시간 후엔 google이 나올 수 있도록 구현 하였습니다.
+- [x] media 값에 따라서 Google, Facebook을 아이콘 혹은 텍스트로 표시한다.
 
-In the project directory, you can run:
+# 1. 예산 소진 현황
+- [x] API 데이터를 이용하여 자유롭게 퍼블리싱
 
-### `yarn start`
+# 2. 캠페인 주요 지표 하이라이트
+- [x] API 데이터를 이용하여 자유롭게 퍼블리싱
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 3. 캠페인 주요 지표 트랜드
+- [ ] KPI는 1~5개를 선택 할 수 있게끔 한다.
+- [ ] 선택한 KPI만 Chart에 보여주도록 한다.
+- [ ] Chart를 이용하여 시각화 필수. (Chart 종류, Library 자유)
+- [ ] 각 KPI마다 단위의 편차가 크기 때문에 해당 단위 그대로 Chart에 그리게 되면 단위가 낮은 KPI는 하단에 깔려 안보이게 될 수도 있습니다. 이를 해결하기 위한 코드도 작성해주세요.
